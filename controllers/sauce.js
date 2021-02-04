@@ -30,6 +30,15 @@ exports.modifySauce = (req, res, next) => {
       fs.unlinkSync(`images/${filename}`)
     })
 
+    Sauce.updateOne(
+      // On applique les paramètre de sauceObject
+      { _id: req.params.id },
+      { ...sauceObject, _id: req.params.id }
+    )
+      .then(() => res.status(200).json({ message: 'Sauce modifiée !' }))
+      .catch((error) => res.status(400).json({ error }))
+  }
+  
     
     sauceObject = {
       // On ajoute la nouvelle image
