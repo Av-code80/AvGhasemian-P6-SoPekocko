@@ -21,11 +21,3 @@ exports.createSauce = (req, res, next) => {
 exports.modifySauce = (req, res, next) => {
   // Pour la route PUT = modification d'une sauce
   let sauceObject = 0
-
-  if (req.file) {
-    // Si la modification contient une image
-    Sauce.findOne({ _id: req.params.id }).then((sauce) => {
-      // On supprime l'ancienne image du serveur
-      const filename = sauce.imageUrl.split('/images/')[1]
-      fs.unlinkSync(`images/${filename}`)
-    })
