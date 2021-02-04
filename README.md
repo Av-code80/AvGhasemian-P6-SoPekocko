@@ -28,7 +28,7 @@ Afin d'utiliser l'API, vous pouvez cloner ce [répertoire Github](https://github
 ### Objectifs 
 Créer l'API de l'application "Piquante" permettant aux utilisateurs de l'application d'ajouter leurs sauces préférées et de "liker" ou "disliker" les sauces ajoutées par les autres utilisateurs.
 
-### Compétences évaluées
+### Compétences dévelopées
 * Stocker des données de manière sécurisée
 * Mettre en œuvre des opérations CRUD de manière sécurisée
 * Implémenter un modèle logique de données conformément à la réglementation
