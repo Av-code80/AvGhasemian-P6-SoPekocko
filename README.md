@@ -1,5 +1,5 @@
 # Projet n°6 - Développement Web 
-## Création d'une API sécurisée pour l'application "Piquante" par So Pekocko
+## Création d'une API sécurisée pour l'application "Piquante"- So Pekocko;
 
 ![Logo So Pekocko](docs/logo.png)
 
