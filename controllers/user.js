@@ -21,3 +21,11 @@ exports.signup = (req, res, next) => {
     })
     .catch((error) => res.status(500).json({ error }))
 }
+
+exports.login = (req, res, next) => {
+  // Pour la connection à son compte utilisateur
+  User.findOne({ email: req.body.email })
+    .then((user) => {
+      if (!user) {
+        return res.status(401).json({ error: 'Utilisateur non trouvé !' })
+      }
