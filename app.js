@@ -32,3 +32,8 @@ app.use((req, res, next) => {
   )
   next()
 })
+
+
+app.use(bodyParser.json()) 
+
+app.use('/images', express.static(path.join(__dirname, 'images'))) //Va permettre à l'app de servir le dossier contenant les images, pour le middleware multer
