@@ -3,12 +3,13 @@
 
 ![Logo So Pekocko](docs/logo.png)
 
+### Front-end
+Pour pouvoir utiliser l'API, vous pouvez cloner ce [répertoire Github](https://github.com/OpenClassrooms-Student-Center/dwj-projet6) et y suivre les instructions pour faire tourner le front-end (plus de détails dans la note de cadrage: Dépôt GitHub/Procédure).
+
 ### Documentations
 * [Note de cadrage](docs/cadrage.pdf)
 * [Guidelines API](docs/guidelines.pdf)
 
-### Front-end
-Pour pouvoir utiliser l'API, vous pouvez cloner ce [répertoire Github](https://github.com/OpenClassrooms-Student-Center/dwj-projet6) et y suivre les instructions pour faire tourner le front-end (plus de détails dans la note de cadrage: Dépôt GitHub/Procédure).
 
 ### Technologies utilisées
 * Express
