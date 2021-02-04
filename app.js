@@ -25,3 +25,10 @@ app.use((req, res, next) => {
     'Access-Control-Allow-Headers', // On donne l'autorisation d'utiliser ces headers sur l'objet réponse
     'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
   )
+
+  res.setHeader(
+    'Access-Control-Allow-Methods', // On donne l'autorisation d'utiliser ces actions aux réponse
+    'GET, POST, PUT, DELETE, PATCH, OPTIONS'
+  )
+  next()
+})
