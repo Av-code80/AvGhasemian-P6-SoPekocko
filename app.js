@@ -9,4 +9,19 @@ const path = require ('path') // Pour le middleware express static pour acceder 
 const sauceRoutes = require('./routes/sauce')
 const userRoutes = require('./routes/user')
 
+mongoose
+  .connect(
+    `mongodb+srv://${mongooseConfig.id}:${mongooseConfig.pwd}@cluster0-uzjno.mongodb.net/piquante?retryWrites=true&w=majority`,
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'))
 
+const app = express()
+
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*') // On donne l'accès à toute origine '*'
+  res.setHeader(
+    'Access-Control-Allow-Headers', // On donne l'autorisation d'utiliser ces headers sur l'objet réponse
+    'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
+  )
