@@ -26,6 +26,7 @@ app.use((req, res, next) => {
     'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
   )
 
+  
   res.setHeader(
     'Access-Control-Allow-Methods', // On donne l'autorisation d'utiliser ces actions aux réponse
     'GET, POST, PUT, DELETE, PATCH, OPTIONS'
@@ -33,7 +34,11 @@ app.use((req, res, next) => {
   next()
 })
 
-
 app.use(bodyParser.json()) 
 
 app.use('/images', express.static(path.join(__dirname, 'images'))) //Va permettre à l'app de servir le dossier contenant les images, pour le middleware multer
+
+app.use('/api/sauces', sauceRoutes)
+app.use('/api/auth', userRoutes)
+
+module.exports = app // L'application est exporté pour être 'servi' par le serveur
