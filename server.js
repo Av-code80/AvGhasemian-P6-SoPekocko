@@ -39,8 +39,6 @@ const errorHandler = (error) => {
   }
 }
 
-
-
 const server = http.createServer(app) // On créer notre serveur grâce à le méthode '.createServer qui prend deux paramètres
 
 server.on('error', errorHandler);
