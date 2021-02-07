@@ -1,5 +1,4 @@
 // L'application en elle même qui va faire appelle aux différentes fonctions implémentées dans l'APi : Accès aux images, aux route User, aux route Sauces
-
 const express = require('express')
 const bodyParser = require('body-parser') // Pour faciliter le traitement des données contenues dans le corp de la reqûete, le transformant en objet JSON
 const mongoose = require('mongoose') // L'interface pour communiquer avec la BDD
