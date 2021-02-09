@@ -33,7 +33,6 @@ Créer l'API de l'application "Piquante" permettant aux utilisateurs de l'applic
 * Mettre en œuvre des opérations CRUD de manière sécurisée
 * Implémenter un modèle logique de données conformément à la réglementation
 
-
 ### Résultat - Serveur de développement 
 
 Afin d'utiliser le serveur, chargez les packages nécessaires :
